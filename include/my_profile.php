@@ -1,13 +1,7 @@
-<?php 
+<?php
 session_start();
-error_reporting(0);
-include('connection/db.php');
-$header= mysqli_query($conn,"select * from profiles where user_email='{$_SESSION['email']}'");
-while ( $row=mysqli_fetch_array($header)) {
-  $img=$row['img'];
-  $name=$row['name'];
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -35,6 +29,8 @@ while ( $row=mysqli_fetch_array($header)) {
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   </head>
   <body>
     
@@ -47,13 +43,11 @@ while ( $row=mysqli_fetch_array($header)) {
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item <?php if($page=='home'){echo 'active';} ?>"><a href="index.php" class="nav-link">Home</a></li>
-	          <li class="nav-item <?php if($page=='about'){echo 'active';} ?>"><a href="about.php" class="nav-link">About</a></li>
-	          <li class="nav-item <?php if($page=='blog'){echo 'active';} ?>"><a href="blog.php" class="nav-link">Blog</a></li>
-	          <li class="nav-item <?php if($page=='contact'){echo 'active';} ?>"><a href="contact.php" class="nav-link">Contact</a></li>
-
-            
-            <?php
+	          <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="about.php" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+	          <?php
            if (isset($_SESSION['email'])==true){ ?>
            <li class="nav-item cta mr-md-2"><a href="job-post.php" class="nav-link"><?php if(empty($name)) {echo $_SESSION['email']; } else{echo $name ;}?></a></li>
            
@@ -83,4 +77,15 @@ while ( $row=mysqli_fetch_array($header)) {
 	  </nav>
     <!-- END nav -->
     
-    
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-8 ftco-animate text-center text-md-left mb-5" data-scrollax=" properties: { translateY: '70%' }">
+          	<p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-3">
+              <a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Profile</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">My Profile</h1>
+          </div>
+        </div>
+      </div>
+    </div>

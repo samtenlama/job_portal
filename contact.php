@@ -1,6 +1,10 @@
 <?php
+$page='contact';
 include('include/header.php');
+include('include/h-header.php');
 ?>
+?>
+
     <section class="ftco-section contact-section bg-light">
       <div class="container">
         <div class="row d-flex mb-5 contact-info">

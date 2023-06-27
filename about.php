@@ -1,5 +1,7 @@
 <?php
+$page='about';
 include('include/header.php');
+include('include/h-header.php');
 ?>
     <section class="ftco-about d-md-flex">
     	<div class="one-half img" style="background-image: url(images/about.jpg);"></div>

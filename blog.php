@@ -1,5 +1,8 @@
 <?php
+$page='blog';
 include('include/header.php');
+include('include/h-header.php');
+?>
 ?>
     <section class="ftco-section bg-light">
       <div class="container">
