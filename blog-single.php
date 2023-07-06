@@ -151,7 +151,7 @@ if (isset($_SESSION['email'])==true){
             
            
            
-            <input type="submit" name="submit" value="submit" placeholder="Submit" class="btn btn-primary btn-block ">
+            <input type="submit" name="submit" value="Submit Application" placeholder="Submit" class="btn btn-primary btn-block ">
             
             </div>
 
@@ -292,7 +292,7 @@ if (isset($_SESSION['email'])==true){
               </form>
             </div>
             <div class="sidebar-box ftco-animate">
-              <div class="categories">
+              <!-- <div class="categories">
                 <h3>Categories</h3>
                 <li><a href="#">Jobs <span>(12)</span></a></li>
                 <li><a href="#">Visual Assistant <span>(22)</span></a></li>
@@ -300,7 +300,7 @@ if (isset($_SESSION['email'])==true){
                 <li><a href="#">Drinks <span>(42)</span></a></li>
                 <li><a href="#">Foods <span>(14)</span></a></li>
                 <li><a href="#">Travel <span>(140)</span></a></li>
-              </div>
+              </div> -->
             </div>
 
             <div class="sidebar-box ftco-animate">

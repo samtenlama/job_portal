@@ -33,8 +33,8 @@ include('include/sidebar.php');
                 <th>Job Title</th>
                 <th>Description</th>
                 <th>Country</th>
-                <th>State</th>
-                <th>City</th>
+                <th>Qualifaction</th>
+                <th>Salary</th>
                 <th>Action</th>
                 
             </tr>
@@ -45,18 +45,19 @@ include('include/sidebar.php');
 include('connection/db.php');
 
 $query=mysqli_query($conn, "select * from all_jobs where customer_email='{$_SESSION['email']}'");
+$count = 1;
 while($row=mysqli_fetch_array($query)){
 ?>
            
             <tr>
-            <td><?php echo $row['job_id'];?></td>
+            <td><?php echo $count++?></td>
                
                 <td><?php echo $row['customer_email'];?></td>
                 <td><?php echo $row['job_title'];?></td>
                 <td><?php echo $row['des'];?></td>
                 <td><?php echo $row['country'];?></td>
-                <td><?php echo $row['state'];?></td>
-                <td><?php echo $row['city'];?></td>
+                <td><?php echo $row['qualification'];?></td>
+                <td>Rs. <?php echo $row['salary'];?></td>
                
                
 <td>
@@ -77,8 +78,8 @@ while($row=mysqli_fetch_array($query)){
                 <th>Job Title</th>
                 <th>Description</th>
                 <th>Country</th>
-                <th>State</th>
-                <th>City</th>
+                <th>Qualifaction</th>
+                <th>Salary</th>
                 <th>Action</th>
                
             </tr>

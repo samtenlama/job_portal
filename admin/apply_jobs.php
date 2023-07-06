@@ -59,7 +59,7 @@ while($row=mysqli_fetch_array($query)){
                 
                 <td><?php echo $row['first_name'];?><?php echo $row['last_name'];?></td>
                
-                <td><?php echo $row['job_seeker'];?></td>
+                <td><?php echo $row['remarks'];?></td>
                <!-- <td><a href="http://localhost/job_portal/files/<?php echo $row['file']; ?>">Download File</a></td> -->
                
 <td>

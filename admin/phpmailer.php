@@ -74,7 +74,7 @@ try {
     $mail->send();
     echo '<h1>Message has been sent</h1>';
     include('connection/db.php');
-    $query=mysqli_query($conn,"delete from job_apply where id ='$id'");
+    $query=mysqli_query($conn,"update job_apply set remarks = 'Approved' where id ='$id'");
     echo "<script>
     window.setTimeout(function(){
         window.location.href ='http://localhost/job_portal/admin/apply_jobs.php';

@@ -129,6 +129,7 @@ if(isset($_POST['submit'])) {
     $first_name=$_POST['first_name'];
     $last_name=$_POST['last_name'];
     $admin_type=$_POST['admin_type'];
+    
 
 $query1=mysqli_query($conn,"update admin_login set admin_email='$email,',admin_username='$Username',admin_password='$Password',first_name='$first_name',last_name='$last_name',admin_type='$admin_type'	where id ='$id'");
 if ($query1){

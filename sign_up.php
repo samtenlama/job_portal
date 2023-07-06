@@ -56,6 +56,9 @@ if (isset($_POST['submit'])){
   $last_name=$_POST['last_name'];
   $dob=$_POST['dob'];
   $mobile_number=$_POST['mobile_number'];
+
+  
+
   $query=mysqli_query($conn,"insert into jobseeker(email,password,first_name,last_name,dob,mobile_number)values('$email','$password','$first_name','$last_name','$dob','$mobile_number')");
   var_dump($query);
   if ($query) {

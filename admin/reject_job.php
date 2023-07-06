@@ -196,9 +196,9 @@ if ($query) { ?>
       <?php
       include('connection/db.php');
       $id=$_GET['id'];
-      $query=mysqli_query($conn,"delete from job_apply where id ='$id'");
+      $query=mysqli_query($conn,"update job_apply set remarks = 'Rejected' where id ='$id'");
       if ($query){
-        echo "data has been successfully Remove!!";
+        echo "data has been successfully Rejected!!";
 
       }else{
         echo "please try again !";

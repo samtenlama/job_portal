@@ -7,6 +7,8 @@ $email=$_POST['email'];
  $last_name=$_POST['last_name'];
  $admin_type=$_POST['admin_type'];
 
+ 
+
 
 
 
