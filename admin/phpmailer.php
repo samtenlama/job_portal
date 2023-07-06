@@ -48,13 +48,13 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = $from;                     //SMTP username
+    $mail->Username   = 'samtenl261@gmail.com';                     //SMTP username
     $mail->Password   = 'bzkhuvhhnhrbezsh';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom($to, 'host Programming');
+    $mail->setFrom($to, 'mirajshrestha10@gmail.com');
     $mail->addAddress('samtenl261@gmail.com', 'Joe User');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
@@ -77,7 +77,7 @@ try {
     $query=mysqli_query($conn,"delete from job_apply where id ='$id'");
     echo "<script>
     window.setTimeout(function(){
-        window.location.href ='hhtp://localhost/job_portal/admin/apply_jobs.php';
+        window.location.href ='http://localhost/job_portal/admin/apply_jobs.php';
     }, 5000);
     </script>";
 

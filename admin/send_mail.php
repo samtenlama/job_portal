@@ -45,7 +45,6 @@ while($row=mysqli_fetch_array($query)){
                 <td><input type="email" name="to" id="to" class="form-control" value="<?php echo $row['job_seeker']; ?>"></td>
             </div>  
              
-
                 <div class="form-group">
                 <label for="">From: </label>
             <td><input type="email" id="from" name="form" class="form-control" placeholder="from"></td>

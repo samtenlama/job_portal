@@ -63,7 +63,7 @@ while($row=mysqli_fetch_array($query)){
            </div>
 
            <div class="form-group">
-                <label for="">Job Seeker Mpbile Number: </label>
+                <label for="">Job Seeker Mobile Number: </label>
                 <td><?php echo $row['mobile_number'];?></td>
 
            </div>

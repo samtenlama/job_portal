@@ -33,7 +33,7 @@ include('include/sidebar.php');
                 
 
                 <th>Job Seeker Name</th>
-                <th>Job Seeker Email</th>
+                <th>Remarks</th>
                 
                 <th>Action</th>
 
@@ -80,7 +80,7 @@ while($row=mysqli_fetch_array($query)){
                 
 
                 <th>Job Seeker Name</th>
-                <th>Job Seeker Email</th>
+                <th>Remarks</th>
                 
                 <th>Action</th>
   
