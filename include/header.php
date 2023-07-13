@@ -64,6 +64,7 @@ while ( $row=mysqli_fetch_array($header)) {
             class="img=circle dropdown-toggle" tytpe="button" data data-toggle="dropdown" alt="Clinque Terre"width="50"height="50">
             <ul class="dropdown-menu">
               <li><a href="my_profile.php">My Profile</a></li>
+              <li><a href="applied.php">Applied Jobs</a></li>
               <li><a href="logout.php">Logout</a></li>
 
             </ul>
@@ -72,6 +73,7 @@ while ( $row=mysqli_fetch_array($header)) {
            <?php
            }else{ ?>
            <li class="nav-item cta mr-md-2"><a href="job-post.php" class="nav-link">Login</a></li>
+           <li class="nav-item cta mr-md-2"><a href="employer/admin_login.php" class="nav-link">Employer Login</a></li>
            
            <?php
 
